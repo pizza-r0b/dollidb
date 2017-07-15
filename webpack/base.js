@@ -19,9 +19,15 @@ const base = extend => {
 
   return Object.assign({}, {
     context: path.resolve(__dirname, '../src'),
+    entry: [
+      'babel-polyfill',
+      '../src/index.js'
+    ],
     output: {
       path: path.resolve(__dirname, '../build'),
-      filename: '[name].js',
+      filename: '[name].min.js',
+      library: 'dollidb',
+      libraryTarget: 'umd',
     },
     devtool: 'source-map',
     target: 'node',
