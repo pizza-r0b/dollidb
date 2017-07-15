@@ -1,3 +1,3 @@
 import CreateDocClient from './CreateDocClient';
 
-export default CreateDocClient();
+export default CreateDocClient;

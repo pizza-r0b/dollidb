@@ -1,6 +1,6 @@
 {
   "name": "dollidb",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "build/main.min.js",
   "repository": {
     "type": "git",

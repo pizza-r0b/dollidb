@@ -9,8 +9,7 @@ const ID_KEY_ALIAS = '#I';
 /**
  * QueryItem will query a table
  */
-function QueryItem(...args) {
-  const [tableName, itemID, path] = args;
+function QueryItem(tableName, itemID, path) {
   let pathCondition = '';
   const ExpressionAttributeValues = {
     [ITEM_ID_VALUE_ALIAS]: itemID,
