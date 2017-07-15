@@ -1,14 +1,13 @@
 {
   "name": "dollidb",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "build/main.min.js",
   "keywords": [
     "dynamodb"
   ],
   "license": "MIT",
-  "module": "src/index.js",
   "scripts": {
-    "prepublish": "npm run test && npm run prod:build",
+    "prepare": "npm run test && npm run prod:build",
     "dev:build": "webpack --config ./webpack/dev.js --watch",
     "prod:build": "webpack --config ./webpack/prod.js -p",
     "test": "mocha-webpack -r babel-polyfill --webpack-config ./webpack/dev.js \"src/test/**.test.js\""
