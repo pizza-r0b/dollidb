@@ -22,7 +22,7 @@ Say we created a User item with the ID as 1. The above object would be converted
 
 
 | ItemID | Path | Value |
-| --- | --- |
+| ------ | ---- | ----- |
 | 1 | address.street | 1 Sansome |
 | 1 | address.state | CA |
 | 1 | address.city | San Francisco |
