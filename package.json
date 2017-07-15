@@ -1,0 +1,25 @@
+{
+  "name": "dollidb",
+  "version": "1.0.0",
+  "main": "build/main.js",
+  "license": "MIT",
+  "module": "src/index.js",
+  "scripts": {
+    "dev:start": "webpack --config ./webpack/dev.js --watch",
+    "prod:start": "webpack --config ./webpack/prod.js -p",
+    "test": "mocha-webpack --webpack-config ./webpack/dev.js \"src/test/**.test.js\""
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.6.0",
+    "mocha-webpack": "^0.7.0",
+    "webpack": "^2.3.2"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.39.0",
+    "deep-extend": "^0.4.1",
+    "immutable": "4.0.0-rc.2",
+    "uuid": "^3.0.1"
+  }
+}
