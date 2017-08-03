@@ -2,7 +2,7 @@
 
 ## Overview
 
-DolliDB was inspired by Reddit's Thing DB. In DolliDB there are Items and there is Data. Each Item has Data associated with it. For example, say you want to store a list of Users and their details. There would be a User Item table  which would have an ID and any fields that would be indexable. There would be a User Data Table that references the User Item ID. The Data table would be contain arbitray data that is linked to the User item by its ID. Each row in the data table has and ItemID, Path, and Value.
+DolliDB was inspired by Reddit's Thing DB. In DolliDB there are Items and there is Data. Each Item has Data associated with it. For example, say you want to store a list of Users and their details. There would be a User Item table  which would have an ID and any fields that would be indexable. There would be a User Data Table that references the User Item ID. The Data table would be contain arbitray data that is linked to the User item by its ID. Each row in the data table has an ItemID, Path, and Value.
 
 Under the hood DolliDB coverts objects to paths. This allows for easy writing and updating of deeply nested, artibtraily named objects.
 
